@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4acf77;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('car-hero.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(153, 185, 167);
+    padding: 50px;
+    flex-wrap: wrap;
+    
+
+    height: 50vh;
+        height: 50vw;
+        background: url("OIP (1).jpeg") no-repeat;
+        background-size: cover;
+        
+
+        .content.btn{
+            align-content: center;
+        }
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    align-items: center;
+    color: rgba(179, 12, 12, 0.267);
+    justify-content: center;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #ff6347;
+}
+
+.ad-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Featured Vehicles */
+.featured-vehicles {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured-vehicles h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.vehicle-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vehicle-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.vehicle-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.vehicle-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.vehicle-card p {
+    font-size: 18px;
+    color: #01010a;
+    left: 10px;
+    background-color: rgb(160, 98, 57);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .ad-banner {
+        margin-top: 20px;
+    }
+
+    .vehicle-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+        justify-content: center;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+        
+    }
+
+    .hero .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .featured-vehicles h2 {
+        font-size: 28px;
+    }
+
+    .vehicle-card h3 {
+        font-size: 20px;
+    }
+
+    .vehicle-card p {
+        font-size: 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>KETTYMOTORS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact us1.html">Contact Us</a></li>
+                <li><a href="help center.html">Help Center</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+        <div class="hero-text">
+            <h1>Find Your Dream Car Today!</h1>
+        </div>
+    
+
+
+    <!-- Featured Vehicles -->
+    <section class="featured-vehicles">
+        <h2>Select Vehicle of Your Choice</h2>
+        <div class="vehicle-grid">
+            <div class="vehicle-card">
+                <img src="OIP (1).jpg" alt="Car 1">
+                <p>Make : Toyota      .</p>
+                <p>Model: Fortuner    .  </p>
+                <p>year : 2012        .</p>
+                <p>Price: MK65,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            <div class="vehicle-card">
+                <img src="download (1).jpg" alt="Car 2">
+                <p>Make : Toyota      .</p>
+                <p>Model: Ford Ranger   .  </p>
+                <p>year : 2016       .</p>
+                <p>Price: MK80,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            <div class="vehicle-card">
+                <img src="download.jpg" alt="Car 3">
+                <p>Make : Toyota      .</p>
+                <p>Model: Raider    .  </p>
+                <p>year : 2015       .</p>
+                <p>Price: MK60,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+
+            <div class="vehicle-card">
+                <img src="OIP (2).jpg" alt="Car 2">
+                <p>Make : Toyota      .</p>
+                <p>Model: EX-TRAIL    .  </p>
+                <p>year : 2012        .</p>
+                <p>Price: MK65,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            <div class="vehicle-card">
+                <img src="OIP (3).jpg" alt="Car 3">
+                <p>Make : Toyota      .</p>
+                <p>Model:  AXIO    .  </p>
+                <p>year : 2012        .</p>
+                <p>Price:12,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            <div class="vehicle-card">
+                <img src="OIP (4).jpg" alt="Car 2">
+                <p>Make : Toyota      .</p>
+                <p>Model: EVERIST    .  </p>
+                <p>year : 2012        .</p>
+                <p>Price: MK90,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            <div class="vehicle-card">
+                <img src="OIP.jpg" alt="Car 3">
+                <p>Make : HONDA      .</p>
+                <p>Model: FREED    .  </p>
+                <p>year : 2012        .</p>
+                <p>Price: MK8,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            <div class="vehicle-card">
+                <img src="R.jpg" alt="Car 2">
+                <p>Make : Toyota      .</p>
+                <p>Model: DAURIS  .  </p>
+                <p>year : 2018        .</p>
+                <p>Price: MK20,000,000.</p>
+                <li><a href="pay.html">BUY</a></li>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KETTYMOTORS | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

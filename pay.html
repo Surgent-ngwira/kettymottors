@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership Payment</title>
+    <link rel="stylesheet" href="styles-payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #1aa51a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.payment-section {
+    padding: 40px 0;
+}
+
+/* Payment Summary Section */
+.summary-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.summary-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.vehicle-info, .additional-charges {
+    font-size: 1.1rem;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #28c569;
+}
+
+/* Payment Form Styles */
+.payment-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+label {
+    font-weight: 400;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #10c9b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+    .summary-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group-inline {
+        flex-direction: column;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Make Your Payment</h1>
+        </div>
+    </header>
+
+    <section class="payment-section">
+        <div class="container">
+        .
+
+            <!-- Payment Form Section -->
+            <form action="/payment" method="POST" class="payment-form">
+                <h2>Payment Information</h2>
+                
+                <!-- Cardholder Information -->
+                <div class="form-group">
+                    <label for="cardname">Customer's Username:</label>
+                    <input type="text" id="cardname" name="cardname" required>
+            
+                </div>
+
+               
+        
+
+            <!-- Billing Address Fields -->
+            <div class="form-group">
+                <label for="billing-address">Email Address:</label>
+                <input type="text" id="billing-address" name="billing-address" required placeholder="eg cafenolsurgent26@gmail.com">
+            </div>
+
+                <!-- Card Information -->
+                <div class="form-group">
+                    <label for="cardnumber">Card Number:</label>
+                    <input type="text" id="cardnumber" name="cardnumber" required placeholder="XXX-XXXX-XXXX">
+                </div>
+                 
+                <div class="form-group">
+                    <label for="cvv">Password:</label>
+                    <input type="password" id="cvv" name="cvv" required placeholder="Password">
+                </div>
+
+                <!-- Expiry and CVV -->
+    
+
+
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">ZIP/Postal Code:</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </div>
+
+                <!-- Payment Button -->
+                <button type="submit" class="btn">Complete Payment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KETTYMOTORS | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
